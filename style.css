@@ -154,5 +154,10 @@ h3 {
 
     backdrop-filter: blur(2px) saturate(130%);
 }
+
+    .control-button:hover {
+    background-color:rgb(228, 102, 150);
+
+}
     
 }
