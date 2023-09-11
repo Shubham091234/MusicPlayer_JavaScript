@@ -21,8 +21,7 @@ body {
 display: grid;
 align-items: center;
 justify-content: center;
-margin-top: 2rem;
-    
+
 
 }
 
@@ -31,9 +30,10 @@ margin-top: 2rem;
 #musicPlayer {
     text-align: center;
     padding: 20px;
- margin-bottom: 300px;
+margin-bottom: 50px;
+margin-top: 50px;
     border-radius: 10px;
-    box-shadow: 1px 2px 122px 0.1px rgb(122, 128, 128);
+    box-shadow: 1px 2px 14px 0.1px rgb(122, 128, 128);
 
     background-color: rgba(255, 255, 255, .01);
     backdrop-filter: blur(2px) saturate(130%);
@@ -126,7 +126,7 @@ h3 {
 
 .anime{
     animation: rotatePlayer 15s linear infinite;
-    transition: ease-out;
+   
 }
 
 
@@ -141,8 +141,18 @@ h3 {
 }
 
 @media (max-width:768px){
-    #musicPlayer{
-        margin-top: 100px;
-    }
+  body{
+    background-size: 800px 1000px;
+  }
+
+
+  #musicPlayer {
+
+    box-shadow: 1px 2px 14px 0.1px rgb(122, 128, 128);
+
+    margin-top: 180px;
+
+    backdrop-filter: blur(2px) saturate(130%);
+}
     
 }
