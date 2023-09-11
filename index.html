@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+        
+       
+    
+</head>
+<body>
+   <div class="main">
+
+
+    <div id="musicPlayer">
+        <h1>Music Player</h1>
+        <div id="songInfo">
+            <img src="" alt="Song Image">
+            <h2>Song Name</h2>
+            <h3> Artist Name</h3>
+        </div>
+        <audio id="audioPlayer" autoplay="false">
+            <source src="your-music-file.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div id="controls">
+            <button id="prevButton" class="control-button"><i class="fas fa-step-backward"></i></button>
+            <button id="playPauseButton" class="control-button"><i class="fas fa-play"></i></button>
+            <button id="stopButton" class="control-button"><i class="fas fa-stop"></i></button>
+            <button id="nextButton" class="control-button"><i class="fas fa-step-forward"></i></button>
+        </div>
+        <div id="progressContainer">
+            <div id="progressBar">
+                <div id="currentProgress"></div>
+            </div>
+            <div id="timeDisplay">0:00 / 0:00</div>
+        </div>
+    </div>
+
+
+
+   </div>
+    <script src="index.js"> </script>
+</body>
+</html>

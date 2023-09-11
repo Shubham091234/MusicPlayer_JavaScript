@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Add your CSS styles for the player interface here */
+body {
+    font-family: Arial, sans-serif;
+ 
+    background-image: url("https://images.pexels.com/photos/315191/pexels-photo-315191.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    color: aliceblue;
+     background-size:cover ;
+     background-repeat: none;
+
+
+     
+}
+.main{
+
+display: grid;
+align-items: center;
+justify-content: center;
+margin-top: 2rem;
+
+}
+
+
+
+#musicPlayer {
+    text-align: center;
+    padding: 20px;
+ 
+    border-radius: 10px;
+    box-shadow: 1px 2px 122px 0.1px rgb(122, 128, 128);
+
+    background-color: rgba(255, 255, 255, .01);
+    backdrop-filter: blur(2px) saturate(130%);
+}
+
+#audioPlayer {
+    width: 10%;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.control-button {
+    background-color: rgb(228, 102, 150);
+    color: #f7ebeb;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.control-button:hover {
+    background-color: rgb(105, 101, 103);
+
+}
+
+#progressContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+   
+}
+
+#progressBar {
+    width: 100%;
+    height: 10px;
+    background-color: #ccc;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 30px;
+}
+
+#currentProgress {
+    border-radius: 30px;
+    height: 100%;
+    width: 0;
+    background-color: rgb(228, 102, 150);
+}
+
+#songInfo {
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+#songInfo img {
+    max-width: 200px;
+    max-height: 200px;
+    margin-bottom: 10px;
+    border-radius: 110px;
+    overflow: hidden;
+    box-shadow: 5px 5px 70px 10px rgba(82, 80, 80, 0.43);
+    opacity: .8;
+}
+
+h2 {
+    font-size: 24px;
+    color: aliceblue;
+    margin: 16px;
+}
+
+h3 {
+    font-size: 20px;
+    color: aliceblue;
+}
+
+#timeDisplay {
+    margin-top: 10px;
+    font-size: 16px;
+    color: aliceblue;
+}
+
+.anime{
+    animation: rotatePlayer 15s linear infinite;
+    transition: ease-out;
+}
+
+
+@keyframes rotatePlayer  {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width:768px){
+    #musicPlayer{
+        margin-top: 100px;
+    }
+    
+}
